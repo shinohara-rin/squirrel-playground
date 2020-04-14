@@ -12,11 +12,17 @@
                     "${file}"
                 ]
             },
+            "linux": {
+                "command": "./interpreters/sq_linux"
+                "args": [
+                    "${file}"
+                ]
+            },
             "windows": {
                 "command": "./interpreters/sq_static.exe"
                 "args": [
                     "${file}"
-                ],
+                ]
             },
             "problemMatcher": [],
             "group": {
