@@ -6,9 +6,17 @@
         {
             "label": "run",
             "type": "shell",
+            "osx": {
+                "command": "./interpreters/sq_macos",
+                "args": [
+                    "${file}"
+                ]
+            },
             "windows": {
-                "args": ["${file}"],
                 "command": "./interpreters/sq_static.exe"
+                "args": [
+                    "${file}"
+                ],
             },
             "problemMatcher": [],
             "group": {
